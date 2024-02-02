@@ -169,4 +169,15 @@ const reset = () => {
     });
   };
   
-  document.querySelector(".reset").addEventListener("click", reset);
+  document.querySelectorAll(".reset").addEventListener("click", reset);
+
+ 
+
+
+  function listQ(){
+    var e = document.getElementById("list");
+    if(e.selectedIndex > 0){
+      if("Blank Test" === e.options[e.selectedIndex].value){ alert("yo"); }
+    }
+  }
+  document.getElementById("list").addEventListener("click",listQ);
